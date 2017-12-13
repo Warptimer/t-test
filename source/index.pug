@@ -1,0 +1,12 @@
+include assets/blocks/_global/head/head
+
+body
+  main.app
+    include assets/blocks/_global/preloader/preloader
+
+    .app__main
+      a(data-fancybox data-src="#modal" href="javascript:;").app__button.button.button_size_large.button_theme_green Enter
+      
+      include assets/blocks/modal/modal
+
+  include assets/blocks/_global/scripts/scripts

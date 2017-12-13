@@ -1,0 +1,30 @@
+.button
+  cursor: pointer
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  box-sizing: border-box
+  text-align: center
+  border-radius: 3px
+
+  &_size_regular
+    font: 400 14px 'Roboto'
+    padding: 3px 8.5px
+
+  &_size_large
+    font: 400 16px 'Roboto'
+    padding: 3*2px 8.5*2px
+
+  &_theme_green
+    background: #93c273
+    box-shadow: inset 0px -2px 0px 0px rgba(black, 0.08)
+    color: white
+    transition: background 0.2s ease-in-out
+
+    &:hover
+      background: darken(#93c273, 5%)
+
+    &:disabled
+      background: #ccc
+      pointer-events: none
+      cursor: default
