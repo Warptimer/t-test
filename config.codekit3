@@ -12,9 +12,9 @@
 	"\/.gitignore": {
 		"cB": 0,
 		"ft": 8192,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/build\/.gitignore",
-		"oF": 0
+		"oF": 1
 		},
 	"\/build": {
 		"ft": 65536,
@@ -438,7 +438,7 @@
 	"displayValue": "t-test",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-obama",
-	"lastBuiltDate": 534846742
+	"lastBuiltDate": 534850891
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
