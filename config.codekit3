@@ -9,6 +9,13 @@
 	],
 "creatorBuild": "26148",
 "files": {
+	"\/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/.gitignore",
+		"oF": 0
+		},
 	"\/build": {
 		"ft": 65536,
 		"oA": 1,
@@ -162,11 +169,66 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/source\/assets\/img\/check.png": {
+	"\/source\/assets\/img\/check-on.png": {
 		"ft": 32768,
 		"iS": 192,
 		"oA": 0,
-		"oAP": "\/build\/assets\/img\/check.png",
+		"oAP": "\/build\/assets\/img\/check-on.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/assets\/img\/close-icon.png": {
+		"ft": 32768,
+		"iS": 155,
+		"oA": 0,
+		"oAP": "\/build\/assets\/img\/close-icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/assets\/img\/password-icon-active.png": {
+		"ft": 32768,
+		"iS": 285,
+		"oA": 0,
+		"oAP": "\/build\/assets\/img\/password-icon-active.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/assets\/img\/password-icon.png": {
+		"ft": 32768,
+		"iS": 286,
+		"oA": 0,
+		"oAP": "\/build\/assets\/img\/password-icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/assets\/img\/separator-active.png": {
+		"ft": 32768,
+		"iS": 15161,
+		"oA": 0,
+		"oAP": "\/build\/assets\/img\/separator-active.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/assets\/img\/separator.png": {
+		"ft": 32768,
+		"iS": 225,
+		"oA": 0,
+		"oAP": "\/build\/assets\/img\/separator.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -194,6 +256,28 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/source\/assets\/img\/toggle-handler.png": {
+		"ft": 32768,
+		"iS": 796,
+		"oA": 0,
+		"oAP": "\/build\/assets\/img\/toggle-handler.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/assets\/img\/toggle-off.png": {
+		"ft": 32768,
+		"iS": 705,
+		"oA": 0,
+		"oAP": "\/build\/assets\/img\/toggle-off.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/source\/assets\/img\/toggle-on.png": {
 		"ft": 32768,
 		"iS": 742,
@@ -205,11 +289,22 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/source\/assets\/img\/toggle.png": {
+	"\/source\/assets\/img\/user-icon-active.png": {
 		"ft": 32768,
-		"iS": 796,
+		"iS": 304,
 		"oA": 0,
-		"oAP": "\/build\/assets\/img\/toggle.png",
+		"oAP": "\/build\/assets\/img\/user-icon-active.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/assets\/img\/user-icon.png": {
+		"ft": 32768,
+		"iS": 291,
+		"oA": 0,
+		"oAP": "\/build\/assets\/img\/user-icon.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -232,6 +327,16 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/assets\/js\/jquery.fancybox.min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/source\/assets\/js\/modules\/jquery.validate.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/assets\/js\/jquery.validate.min.js",
 		"oF": 0,
 		"sC": 0,
 		"tS": 0
@@ -333,7 +438,7 @@
 	"displayValue": "t-test",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-obama",
-	"lastBuiltDate": 534833424
+	"lastBuiltDate": 534846742
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

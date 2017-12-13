@@ -15,16 +15,88 @@
   &_text
     width: 100%
     overflow: hidden
+    position: relative
+    display: flex
+    align-items: center
+    flex-direction: row-reverse
+    overflow: hidden
 
     .input
+      &__icon
+        content: ''
+        display: block
+        flex-shrink: 0
+        width: 30px
+        height: 28px
+        overflow: visible
+        border: 1px solid #d5d5d5
+        border-right: 0
+        border-top-left-radius: 2px
+        border-bottom-left-radius: 2px
+        position: relative
+        transition: 0.2s ease-in-out
+
+        &::after
+          content: ''
+          display: block
+          position: absolute
+          top: 0
+          left: 100%
+          width: 6px
+          height: 28px
+          background:
+            image: url('../img/separator.png')
+            repeat: no-repeat
+            position: center
+            size: 6px 29px
+
+        &_user
+          background: 
+            image: url('../img/user-icon.png')
+            repeat: no-repeat
+            position: center
+            size: 15px
+
+        &_password
+          background: 
+            image: url('../img/password-icon.png')
+            repeat: no-repeat
+            position: center
+            size: 16px 14px
+
       &__source
         width: 100%
-        height: 53px
-        font: 400 16px 'Roboto'
-        color: rgba(black, 0.5)
-        padding: 15px 20px
+        font: 400 14px 'Roboto'
+        color: rgb(153, 153, 153)
+        line-height: 1.214em
+        text-align: left
+        padding: 6px 15px
         box-sizing: border-box
         background: white
+        border: 1px solid #d5d5d5
+        border-left: 0
+        border-top-right-radius: 2px
+        border-bottom-right-radius: 2px
+        transition: 0.2s ease-in-out
+
+        &:focus
+          border: 1px solid #93c273
+          border-left: 0
+
+        &:focus ~ .input__icon_user
+          border: 1px solid #93c273
+          border-right: 0
+          background-color: #fafafa
+          background-image: url('../img/user-icon-active.png')
+
+        &:focus ~ .input__icon_password
+          border: 1px solid #93c273
+          border-right: 0
+          background-color: #fafafa
+          background-image: url('../img/password-icon-active.png')
+
+        &:focus ~ .input__icon::after
+          background-image: url('../img/separator-active.png')
 
   // base
   &_toggle
@@ -38,7 +110,7 @@
         position: relative
         border-radius: 100px
         background: 
-          image: url('../img/toggle-off.svg')
+          image: url('../img/toggle-off.png')
           repeat: no-repeat
           position: center
         transition: background 0.2s ease-in-out
@@ -47,7 +119,7 @@
           content: ''
           position: absolute
           right: calc(100% + 8px)
-          top: calc(50% - 8px / 2)
+          top: calc(50% - 10px / 2)
           display: block
           width: 8px
           height: 8px
@@ -67,7 +139,7 @@
           display: block
           flex-shrink: 0
           border-radius: 50%
-          background: url('../img/toggle.png') no-repeat center
+          background: url('../img/toggle-handler.png') no-repeat center
           transition: background 0.2s ease-in-out, left 0.2s ease-in-out
 
       &__source
@@ -76,49 +148,12 @@
         visibility: hidden
 
         &:checked ~ .input__label
-          background-image: url('../img/toggle-on.svg')
+          background-image: url('../img/toggle-on.png')
 
           &::before
             background-image: url('../img/check-on.png')
 
           &::after
             left: calc(50% + 12px / 2)
-          
-  &_radio
-    position: relative
 
-    .input
-      &__label
-        display: block
-        position: relative
-        width: 17px
-        height: 17px
-        border-radius: 50%
-        box-sizing: border-box
-        border: 1px solid #D0D0D0
-        background: white
-        transition: background 0.2s ease-in-out, border 0.2s ease-in-out
-
-        &::before
-          content: ''
-          position: absolute
-          top: calc(50% - 11px / 2)
-          left: calc(50% - 11px / 2)
-          width: 11px
-          height: 11px
-          display: block
-          flex-shrink: 0
-          border-radius: 50%
-          background: #D0D0D0
-          transition: background 0.2s ease-in-out
-
-      &__source
-        display: none
-        visibility: hidden
-        opacity: 0
-
-        &:checked ~ .input__label
-          border: 1px solid white
-
-          &::before
-            background: #8DC63F
+    

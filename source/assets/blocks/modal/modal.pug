@@ -1,13 +1,22 @@
 .app__modal.modal(style="display: none;" id="modal")
-  form.modal__content
-    .modal__input.input.input_text
-      input#a.input__source(type="email", placeholder="Email" required)
-    .modal__input.input.input_text
-      input#b.input__source(minlength="5" type="password", placeholder="Password" required)
-    button(type="submit").modal__button.button.button_size_regular.button_theme_green Sign In
-    .modal__input.input.input_toggle.input_theme_light
-      input#d.input__source(type="checkbox", name="ex-toggle" checked)
-      label.input__label(for="d")
+  form.modal__content#authorization
+    .modal__avatar
+      //- img(src="./assets/avatar-example.png" alt="Пример аватарки").modal__avatar-source
+    .modal__head
+      .modal__input.input.input_text
+        input#a.input__source(type="email", placeholder="Email" required)
+        .input__icon.input__icon_user
+      .modal__input.input.input_text
+        input#b.input__source(minlength="5" type="password", placeholder="Password" required)
+        .input__icon.input__icon_password
+      a(href="/").modal__text Forgot your password?
+    .modal__foot
+      .modal__remember
+        .modal__input.input.input_toggle.input_theme_light
+          input#d.input__source.input__source_password(type="checkbox", name="rememberme" checked)
+          label.input__label(for="d")
+        a(href="/").modal__text Remember?
+      button(type="submit").modal__button.button.button_size_regular.button_theme_green Sign In
   .modal__footnote
     p.modal__text Not a registered user yet?
     a(href="/").modal__link Sign up now!

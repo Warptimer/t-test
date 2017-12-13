@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+  <title>Authorization form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <main class="app">
+    <div class="app__preloader preloader">
+      <div class="preloader__wrapper">
+        <div class="preloader__spin preloader__spin_active">
+          <div class="preloader__spinner">
+            <div class="preloader__clipper preloader__clipper_left">
+              <div class="preloader__circle"></div>
+            </div>
+            <div class="preloader__gap-patch">
+              <div class="preloader__circle"></div>
+            </div>
+            <div class="preloader__clipper preloader__clipper_right">
+              <div class="preloader__circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="app__main"><a class="app__button button button_size_large button_theme_green" data-fancybox data-src="#modal" href="javascript:;">Enter</a>
+      <div class="app__modal modal" style="display: none;" id="modal">
+        <form class="modal__content" id="authorization">
+          <div class="modal__avatar"></div>
+          <div class="modal__head">
+            <div class="modal__input input input_text">
+              <input class="input__source" id="a" type="email" placeholder="Email" required>
+              <div class="input__icon input__icon_user"></div>
+            </div>
+            <div class="modal__input input input_text">
+              <input class="input__source" id="b" minlength="5" type="password" placeholder="Password" required>
+              <div class="input__icon input__icon_password"></div>
+            </div><a class="modal__text" href="/">Forgot your password?</a>
+          </div>
+          <div class="modal__foot">
+            <div class="modal__remember">
+              <div class="modal__input input input_toggle input_theme_light">
+                <input class="input__source input__source_password" id="d" type="checkbox" name="rememberme" checked>
+                <label class="input__label" for="d"></label>
+              </div><a class="modal__text" href="/">Remember?</a>
+            </div>
+            <button class="modal__button button button_size_regular button_theme_green" type="submit">Sign In</button>
+          </div>
+        </form>
+        <div class="modal__footnote">
+          <p class="modal__text">Not a registered user yet?</p><a class="modal__link" href="/">Sign up now!</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+  <script src="./assets/js/jquery.fancybox.min.js"></script>
+  <script src="./assets/js/jquery.validate.min.js"></script>
+  <script src="./assets/js/functions.min.js"></script>
+</body>
