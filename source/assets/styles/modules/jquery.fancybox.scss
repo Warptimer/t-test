@@ -767,6 +767,12 @@ li.fancybox-thumbs-loading {
 .fancybox-thumbs > ul > li.fancybox-thumbs-active:before {
   opacity: 1; }
 
+@media all and (max-width: 980px) {
+  .fancybox-slide::before {
+    display: none;
+  }
+}
+
 /* Styling for Small-Screen Devices */
 @media all and (max-width: 800px) {
   .fancybox-thumbs {

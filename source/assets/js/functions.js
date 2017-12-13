@@ -11,10 +11,6 @@ document.addEventListener('DOMContentLoaded', function () {
   $('#authorization').validate({
     errorPlacement: function(error, element) {
       error.insertAfter($(element).parent());
-    },
-    submitHandler: function(form) {
-      console.log(form)
-      form.submit();
     }
   });
 
